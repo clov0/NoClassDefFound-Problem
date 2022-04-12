@@ -1,0 +1,239 @@
+{:clojure.main/message
+ "Execution error (ClassNotFoundException) at jdk.internal.loader.BuiltinClassLoader/loadClass (BuiltinClassLoader.java:581).\norg.joda.time.DateTime\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.ClassNotFoundException,
+  :clojure.error/line 581,
+  :clojure.error/cause "org.joda.time.DateTime",
+  :clojure.error/symbol
+  jdk.internal.loader.BuiltinClassLoader/loadClass,
+  :clojure.error/source "BuiltinClassLoader.java",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message "Syntax error macroexpanding at (core.clj:1:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 1,
+     :clojure.error/column 1,
+     :clojure.error/source "core.clj"},
+    :at [clojure.lang.Compiler$InvokeExpr eval "Compiler.java" 3711]}
+   {:type java.lang.ExceptionInInitializerError,
+    :at [java.lang.Class forName0 "Class.java" -2]}
+   {:type java.lang.ClassNotFoundException,
+    :message "org.joda.time.DateTime",
+    :at
+    [jdk.internal.loader.BuiltinClassLoader
+     loadClass
+     "BuiltinClassLoader.java"
+     581]}],
+  :trace
+  [[jdk.internal.loader.BuiltinClassLoader
+    loadClass
+    "BuiltinClassLoader.java"
+    581]
+   [jdk.internal.loader.ClassLoaders$AppClassLoader
+    loadClass
+    "ClassLoaders.java"
+    178]
+   [java.lang.ClassLoader loadClass "ClassLoader.java" 522]
+   [java.lang.Class forName0 "Class.java" -2]
+   [java.lang.Class forName "Class.java" 398]
+   [clojure.lang.RT classForName "RT.java" 2212]
+   [clojure.lang.RT classForNameNonLoading "RT.java" 2225]
+   [ring.middleware.cookies$loading__6721__auto____19951
+    invoke
+    "cookies.clj"
+    1]
+   [ring.middleware.cookies__init load nil 1]
+   [ring.middleware.cookies__init <clinit> nil -1]
+   [java.lang.Class forName0 "Class.java" -2]
+   [java.lang.Class forName "Class.java" 398]
+   [clojure.lang.RT classForName "RT.java" 2212]
+   [clojure.lang.RT classForName "RT.java" 2221]
+   [clojure.lang.RT loadClassForName "RT.java" 2240]
+   [clojure.lang.RT load "RT.java" 449]
+   [clojure.lang.RT load "RT.java" 424]
+   [clojure.core$load$fn__6856 invoke "core.clj" 6115]
+   [clojure.core$load invokeStatic "core.clj" 6114]
+   [clojure.core$load doInvoke "core.clj" 6098]
+   [clojure.lang.RestFn invoke "RestFn.java" 408]
+   [clojure.core$load_one invokeStatic "core.clj" 5897]
+   [clojure.core$load_one invoke "core.clj" 5892]
+   [clojure.core$load_lib$fn__6796 invoke "core.clj" 5937]
+   [clojure.core$load_lib invokeStatic "core.clj" 5936]
+   [clojure.core$load_lib doInvoke "core.clj" 5917]
+   [clojure.lang.RestFn applyTo "RestFn.java" 142]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$load_libs invokeStatic "core.clj" 5974]
+   [clojure.core$load_libs doInvoke "core.clj" 5958]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$require invokeStatic "core.clj" 5996]
+   [clojure.core$require doInvoke "core.clj" 5996]
+   [clojure.lang.RestFn invoke "RestFn.java" 3659]
+   [io.pedestal.http.ring_middlewares$loading__6721__auto____19672
+    invoke
+    "ring_middlewares.clj"
+    13]
+   [io.pedestal.http.ring_middlewares__init load nil 13]
+   [io.pedestal.http.ring_middlewares__init <clinit> nil -1]
+   [java.lang.Class forName0 "Class.java" -2]
+   [java.lang.Class forName "Class.java" 398]
+   [clojure.lang.RT classForName "RT.java" 2212]
+   [clojure.lang.RT classForName "RT.java" 2221]
+   [clojure.lang.RT loadClassForName "RT.java" 2240]
+   [clojure.lang.RT load "RT.java" 449]
+   [clojure.lang.RT load "RT.java" 424]
+   [clojure.core$load$fn__6856 invoke "core.clj" 6115]
+   [clojure.core$load invokeStatic "core.clj" 6114]
+   [clojure.core$load doInvoke "core.clj" 6098]
+   [clojure.lang.RestFn invoke "RestFn.java" 408]
+   [clojure.core$load_one invokeStatic "core.clj" 5897]
+   [clojure.core$load_one invoke "core.clj" 5892]
+   [clojure.core$load_lib$fn__6796 invoke "core.clj" 5937]
+   [clojure.core$load_lib invokeStatic "core.clj" 5936]
+   [clojure.core$load_lib doInvoke "core.clj" 5917]
+   [clojure.lang.RestFn applyTo "RestFn.java" 142]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$load_libs invokeStatic "core.clj" 5974]
+   [clojure.core$load_libs doInvoke "core.clj" 5958]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$require invokeStatic "core.clj" 5996]
+   [clojure.core$require doInvoke "core.clj" 5996]
+   [clojure.lang.RestFn invoke "RestFn.java" 2088]
+   [io.pedestal.http$loading__6721__auto____17618 invoke "http.clj" 13]
+   [io.pedestal.http__init load nil 13]
+   [io.pedestal.http__init <clinit> nil -1]
+   [java.lang.Class forName0 "Class.java" -2]
+   [java.lang.Class forName "Class.java" 398]
+   [clojure.lang.RT classForName "RT.java" 2212]
+   [clojure.lang.RT classForName "RT.java" 2221]
+   [clojure.lang.RT loadClassForName "RT.java" 2240]
+   [clojure.lang.RT load "RT.java" 449]
+   [clojure.lang.RT load "RT.java" 424]
+   [clojure.core$load$fn__6856 invoke "core.clj" 6115]
+   [clojure.core$load invokeStatic "core.clj" 6114]
+   [clojure.core$load doInvoke "core.clj" 6098]
+   [clojure.lang.RestFn invoke "RestFn.java" 408]
+   [clojure.core$load_one invokeStatic "core.clj" 5897]
+   [clojure.core$load_one invoke "core.clj" 5892]
+   [clojure.core$load_lib$fn__6796 invoke "core.clj" 5937]
+   [clojure.core$load_lib invokeStatic "core.clj" 5936]
+   [clojure.core$load_lib doInvoke "core.clj" 5917]
+   [clojure.lang.RestFn applyTo "RestFn.java" 142]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$load_libs invokeStatic "core.clj" 5974]
+   [clojure.core$load_libs doInvoke "core.clj" 5958]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$require invokeStatic "core.clj" 5996]
+   [clojure.core$require doInvoke "core.clj" 5996]
+   [clojure.lang.RestFn invoke "RestFn.java" 551]
+   [project2.web.core$loading__6737__auto____24381
+    invoke
+    "core.clj"
+    1]
+   [project2web.core__init load nil 1]
+   [project2web.core__init <clinit> nil -1]
+   [java.lang.Class forName0 "Class.java" -2]
+   [java.lang.Class forName "Class.java" 398]
+   [clojure.lang.RT classForName "RT.java" 2212]
+   [clojure.lang.RT classForName "RT.java" 2221]
+   [clojure.lang.RT loadClassForName "RT.java" 2240]
+   [clojure.lang.RT load "RT.java" 449]
+   [clojure.lang.RT load "RT.java" 424]
+   [clojure.core$load$fn__6856 invoke "core.clj" 6115]
+   [clojure.core$load invokeStatic "core.clj" 6114]
+   [clojure.core$load doInvoke "core.clj" 6098]
+   [clojure.lang.RestFn invoke "RestFn.java" 408]
+   [clojure.core$load_one invokeStatic "core.clj" 5897]
+   [clojure.core$load_one invoke "core.clj" 5892]
+   [clojure.core$load_lib$fn__6796 invoke "core.clj" 5937]
+   [clojure.core$load_lib invokeStatic "core.clj" 5936]
+   [clojure.core$load_lib doInvoke "core.clj" 5917]
+   [clojure.lang.RestFn applyTo "RestFn.java" 142]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$load_libs invokeStatic "core.clj" 5974]
+   [clojure.core$load_libs doInvoke "core.clj" 5958]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$require invokeStatic "core.clj" 5996]
+   [clojure.core$require doInvoke "core.clj" 5996]
+   [clojure.lang.RestFn invoke "RestFn.java" 2422]
+   [project2core$loading__6737__auto____175
+    invoke
+    "core.clj"
+    1]
+   [project2core__init load nil 1]
+   [project2core__init <clinit> nil -1]
+   [java.lang.Class forName0 "Class.java" -2]
+   [java.lang.Class forName "Class.java" 398]
+   [clojure.lang.RT classForName "RT.java" 2212]
+   [clojure.lang.RT classForName "RT.java" 2221]
+   [clojure.lang.RT loadClassForName "RT.java" 2240]
+   [clojure.lang.RT load "RT.java" 449]
+   [clojure.lang.RT load "RT.java" 424]
+   [clojure.core$load$fn__6856 invoke "core.clj" 6115]
+   [clojure.core$load invokeStatic "core.clj" 6114]
+   [clojure.core$load doInvoke "core.clj" 6098]
+   [clojure.lang.RestFn invoke "RestFn.java" 408]
+   [clojure.core$load_one invokeStatic "core.clj" 5897]
+   [clojure.core$load_one invoke "core.clj" 5892]
+   [clojure.core$load_lib$fn__6796 invoke "core.clj" 5937]
+   [clojure.core$load_lib invokeStatic "core.clj" 5936]
+   [clojure.core$load_lib doInvoke "core.clj" 5917]
+   [clojure.lang.RestFn applyTo "RestFn.java" 142]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$load_libs invokeStatic "core.clj" 5974]
+   [clojure.core$load_libs doInvoke "core.clj" 5958]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$require invokeStatic "core.clj" 5996]
+   [clojure.core$require doInvoke "core.clj" 5996]
+   [clojure.lang.RestFn invoke "RestFn.java" 805]
+   [project.core$loading__6737__auto____175
+    invoke
+    "core.clj"
+    1]
+   [clojure.lang.AFn applyToHelper "AFn.java" 152]
+   [clojure.lang.AFn applyTo "AFn.java" 144]
+   [clojure.lang.Compiler$InvokeExpr eval "Compiler.java" 3706]
+   [clojure.lang.Compiler compile1 "Compiler.java" 7735]
+   [clojure.lang.Compiler compile1 "Compiler.java" 7725]
+   [clojure.lang.Compiler compile "Compiler.java" 7802]
+   [clojure.lang.RT compile "RT.java" 411]
+   [clojure.lang.RT load "RT.java" 457]
+   [clojure.lang.RT load "RT.java" 424]
+   [clojure.core$load$fn__6856 invoke "core.clj" 6115]
+   [clojure.core$load invokeStatic "core.clj" 6114]
+   [clojure.core$load doInvoke "core.clj" 6098]
+   [clojure.lang.RestFn invoke "RestFn.java" 408]
+   [clojure.core$load_one invokeStatic "core.clj" 5897]
+   [clojure.core$compile$fn__6861 invoke "core.clj" 6125]
+   [clojure.core$compile invokeStatic "core.clj" 6125]
+   [clojure.core$compile invoke "core.clj" 6117]
+   [user$eval159$fn__168 invoke "form-init16366169281287939199.clj" 1]
+   [user$eval159 invokeStatic "form-init16366169281287939199.clj" 1]
+   [user$eval159 invoke "form-init16366169281287939199.clj" 1]
+   [clojure.lang.Compiler eval "Compiler.java" 7181]
+   [clojure.lang.Compiler eval "Compiler.java" 7171]
+   [clojure.lang.Compiler eval "Compiler.java" 7171]
+   [clojure.lang.Compiler load "Compiler.java" 7640]
+   [clojure.lang.Compiler loadFile "Compiler.java" 7578]
+   [clojure.main$load_script invokeStatic "main.clj" 475]
+   [clojure.main$init_opt invokeStatic "main.clj" 477]
+   [clojure.main$init_opt invoke "main.clj" 477]
+   [clojure.main$initialize invokeStatic "main.clj" 508]
+   [clojure.main$null_opt invokeStatic "main.clj" 542]
+   [clojure.main$null_opt invoke "main.clj" 539]
+   [clojure.main$main invokeStatic "main.clj" 664]
+   [clojure.main$main doInvoke "main.clj" 616]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.main main "main.java" 40]],
+  :cause "org.joda.time.DateTime",
+  :phase :execution}}
+
+

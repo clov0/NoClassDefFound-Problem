@@ -1,0 +1,592 @@
+Possibly confusing dependencies found:
+[io.pedestal/pedestal.service-tools "0.5.7"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service-tools "0.5.10"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.pedestal/pedestal.service-tools]]
+
+[com.taoensso/timbre "5.1.2"] -> [com.taoensso/encore "3.12.1"]
+ overrides
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [com.taoensso/encore "3.21.0" :exclusions [stellar.lib/schema]]
+
+Consider using these exclusions:
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [com.taoensso/encore]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [com.stuartsierra/component "0.4.0" :exclusions [stellar.lib/schema]]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.lib/component "1.0.0"] -> [com.stuartsierra/component "1.0.0"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.lib/component "1.0.0" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/component "1.0.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [hermes.lib/component "1.0.0" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/component "1.0.0"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.lib/component "1.0.0-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/component "1.0.0"]
+ and
+[hermes.lib/component "1.0.0"] -> [com.stuartsierra/component "1.0.0"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [com.stuartsierra/component "1.0.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [com.stuartsierra/component "1.0.0" :exclusions [stellar.lib/schema]]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [com.stuartsierra/component]]
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [com.stuartsierra/component]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [com.stuartsierra/component]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [com.stuartsierra/component]]
+[hermes.lib/component "1.0.0" :exclusions [com.stuartsierra/component]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.client/kafka "3.0.4-SNAPSHOT" :exclusions [stellar.lib/schema]]
+ overrides
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [hermes.client/kafka "3.0.4" :exclusions [stellar.lib/schema]]
+
+Consider using these exclusions:
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [hermes.client/kafka]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [com.stuartsierra/component "0.4.0" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/dependency "0.2.0"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.lib/component "1.0.0"] -> [com.stuartsierra/component "1.0.0"] -> [com.stuartsierra/dependency "1.0.0"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.lib/component "1.0.0" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/component "1.0.0"] -> [com.stuartsierra/dependency "1.0.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [hermes.lib/component "1.0.0" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/component "1.0.0"] -> [com.stuartsierra/dependency "1.0.0"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.lib/component "1.0.0-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/component "1.0.0"] -> [com.stuartsierra/dependency "1.0.0"]
+ and
+[hermes.lib/component "1.0.0"] -> [com.stuartsierra/component "1.0.0"] -> [com.stuartsierra/dependency "1.0.0"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [com.stuartsierra/component "1.0.0"] -> [com.stuartsierra/dependency "1.0.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [com.stuartsierra/component "1.0.0" :exclusions [stellar.lib/schema]] -> [com.stuartsierra/dependency "1.0.0"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [com.stuartsierra/dependency]]
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [com.stuartsierra/dependency]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [com.stuartsierra/dependency]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [com.stuartsierra/dependency]]
+[hermes.lib/component "1.0.0" :exclusions [com.stuartsierra/dependency]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "0.7.2"]
+ overrides
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.clojure/core.async "1.3.618"] -> [org.clojure/tools.analyzer.jvm "1.1.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"]
+
+Consider using these exclusions:
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [org.clojure/tools.analyzer.jvm]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [org.clojure/tools.analyzer.jvm]]
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [org.clojure/tools.analyzer.jvm]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [org.clojure/tools.analyzer.jvm]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.logging "0.4.1" :exclusions [org.clojure/clojure]]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/kafka "3.0.2-SNAPSHOT"] -> [org.clojure/java.data "1.0.86" :exclusions [io.grpc/grpc-api io.grpc/grpc-core]] -> [org.clojure/tools.logging "1.1.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [hermes.client/kafka "3.0.4" :exclusions [stellar.lib/schema]] -> [org.clojure/java.data "1.0.95" :exclusions [io.grpc/grpc-api io.grpc/grpc-core]] -> [org.clojure/tools.logging "1.2.1"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.client/kafka "3.0.4-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/java.data "1.0.95" :exclusions [io.grpc/grpc-api io.grpc/grpc-core]] -> [org.clojure/tools.logging "1.2.1"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [org.clojure/tools.logging]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [org.clojure/tools.logging]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [org.clojure/tools.logging]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-transport "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-transport]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-codec "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-codec]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-codec-http "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-codec-http]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-handler "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-handler]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-handler-proxy "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-handler-proxy]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-resolver "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-resolver "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-resolver "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-resolver "4.1.59.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-resolver]]
+
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [clj-http "3.12.3" :exclusions [stellar.lib/schema]] -> [commons-io "2.8.0" :exclusions [org.clojure/clojure]]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service-tools "0.5.10"] -> [io.pedestal/pedestal.service "0.5.10"] -> [ring/ring-core "1.9.4" :exclusions [org.clojure/clojure org.clojure/tools.reader crypto-random crypto-equality]] -> [commons-io "2.10.0"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10"] -> [ring/ring-core "1.9.4" :exclusions [org.clojure/clojure org.clojure/tools.reader crypto-random crypto-equality]] -> [commons-io "2.10.0"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [ring/ring-core "1.9.4" :exclusions [org.clojure/clojure org.clojure/tools.reader crypto-random crypto-equality]] -> [commons-io "2.10.0"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [ring/ring-core "1.9.4" :exclusions [org.clojure/clojure org.clojure/tools.reader crypto-random crypto-equality]] -> [commons-io "2.10.0"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [commons-io]]
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [commons-io]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [commons-io]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/tools.analyzer "0.6.9"]
+ overrides
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/tools.analyzer "1.1.0"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/tools.analyzer "1.1.0"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.clojure/core.async "1.3.618"] -> [org.clojure/tools.analyzer.jvm "1.1.0"] -> [org.clojure/tools.analyzer "1.0.0"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/tools.analyzer "1.1.0"]
+
+Consider using these exclusions:
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [org.clojure/tools.analyzer]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [org.clojure/tools.analyzer]]
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [org.clojure/tools.analyzer]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [org.clojure/tools.analyzer]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"]
+ overrides
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.clojure/core.async "1.3.618"] -> [org.clojure/tools.analyzer.jvm "1.1.0"] -> [org.clojure/core.memoize "1.0.236"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"]
+
+Consider using these exclusions:
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [org.clojure/core.memoize]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [org.clojure/core.memoize]]
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [org.clojure/core.memoize]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [org.clojure/core.memoize]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [aysylu/loom "1.0.2" :exclusions [stellar.lib/schema]] -> [org.clojure/data.priority-map "0.0.5"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service-tools "0.5.10"] -> [io.pedestal/pedestal.service "0.5.10"] -> [io.pedestal/pedestal.route "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[io.pedestal/pedestal.service-tools "0.5.7"] -> [io.pedestal/pedestal.service "0.5.7"] -> [io.pedestal/pedestal.route "0.5.7"] -> [io.pedestal/pedestal.interceptor "0.5.7"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service-tools "0.5.10"] -> [io.pedestal/pedestal.service "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10"] -> [io.pedestal/pedestal.route "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [io.pedestal/pedestal.route "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [io.pedestal/pedestal.route "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[io.pedestal/pedestal.service-tools "0.5.7"] -> [io.pedestal/pedestal.service "0.5.7"] -> [io.pedestal/pedestal.interceptor "0.5.7"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.route "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service-tools "0.5.10"] -> [io.pedestal/pedestal.service "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10"] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"] -> [org.clojure/core.cache "1.0.225"] -> [org.clojure/data.priority-map "1.1.0"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"] -> [org.clojure/core.cache "1.0.225"] -> [org.clojure/data.priority-map "1.1.0"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.route "0.5.10" :exclusions [stellar.lib/schema]] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [io.pedestal/pedestal.interceptor "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[io.pedestal/pedestal.service-tools "0.5.7"] -> [io.pedestal/pedestal.service "0.5.7"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10"] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.clojure/core.async "1.3.618"] -> [org.clojure/tools.analyzer.jvm "1.1.0"] -> [org.clojure/core.memoize "1.0.236"] -> [org.clojure/core.cache "1.0.207"] -> [org.clojure/data.priority-map "1.0.0"]
+ and
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"] -> [org.clojure/core.cache "1.0.225"] -> [org.clojure/data.priority-map "1.1.0"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"] -> [org.clojure/data.priority-map "0.0.7"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [org.clojure/data.priority-map]]
+[io.pedestal/pedestal.service-tools "0.5.7" :exclusions [org.clojure/data.priority-map]]
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [org.clojure/data.priority-map]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [org.clojure/data.priority-map]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [org.clojure/data.priority-map]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-transport "4.1.25.Final"] -> [io.netty/netty-buffer "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-buffer]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-transport-native-epoll "4.1.25.Final"] -> [io.netty/netty-common "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-resolver "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-resolver "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-codec "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-transport "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-buffer "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-resolver "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-codec-http "4.1.46.Final"] -> [io.netty/netty-common "4.1.46.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-codec "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-transport "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-buffer "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-resolver "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.graylog2/gelfclient "1.5.1"] -> [io.netty/netty-handler "4.1.59.Final"] -> [io.netty/netty-common "4.1.59.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-common]]
+
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [aleph "0.4.6" :exclusions [stellar.lib/schema]] -> [io.netty/netty-handler-proxy "4.1.25.Final"] -> [io.netty/netty-codec-socks "4.1.25.Final"]
+ overrides
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [hermes.client/lightstreamer "0.1.0-SNAPSHOT"] -> [com.lightstreamer/ls-javase-client "4.3.7"] -> [io.netty/netty-handler-proxy "4.1.46.Final"] -> [io.netty/netty-codec-socks "4.1.46.Final"]
+
+Consider using these exclusions:
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [io.netty/netty-codec-socks]]
+
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [io.pedestal/pedestal.service "0.5.10" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "0.7.2"] -> [org.clojure/core.memoize "0.5.9"] -> [org.clojure/core.cache "0.6.5"]
+ overrides
+[stellar.van-buren/web "1.0.2-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"] -> [org.clojure/core.cache "1.0.225"]
+ and
+[stellar.van-buren/im "1.5.0-SNAPSHOT"] -> [hermes.logic/Arbitrageur "2.0.2-SNAPSHOT" :exclusions [stellar.lib/schema]] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"] -> [org.clojure/core.cache "1.0.225"]
+ and
+[van-buren-sle-router "0.1.0-SNAPSHOT"] -> [org.clojure/core.async "1.3.618"] -> [org.clojure/tools.analyzer.jvm "1.1.0"] -> [org.clojure/core.memoize "1.0.236"] -> [org.clojure/core.cache "1.0.207"]
+ and
+[stellar.van-buren/persisteur "1.0.2-SNAPSHOT"] -> [org.clojure/core.async "1.5.648" :exclusions [stellar.lib/schema]] -> [org.clojure/tools.analyzer.jvm "1.2.2"] -> [org.clojure/core.memoize "1.0.253"] -> [org.clojure/core.cache "1.0.225"]
+
+Consider using these exclusions:
+[stellar.van-buren/web "1.0.2-20220411.175455-4" :exclusions [org.clojure/core.cache]]
+[stellar.van-buren/im "1.5.0-20220410.134324-3" :exclusions [org.clojure/core.cache]]
+[van-buren-sle-router "0.1.0-20220411.202706-13" :exclusions [org.clojure/core.cache]]
+[stellar.van-buren/persisteur "1.0.2-20220410.134154-2" :exclusions [org.clojure/core.cache]]
+
